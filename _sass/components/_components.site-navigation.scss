@@ -1,0 +1,25 @@
+/* ==========================================================================
+   #SITE-NAVIGATION
+   ========================================================================== */
+
+.c-site-navigation__list {
+    margin-bottom: 0;
+}
+
+.c-site-navigation__item {
+    margin-left: $global-spacing-unit-small;
+    margin-right: $global-spacing-unit-small;
+
+    &:last-child {
+        @include respond-to(tablet) {
+            margin-right: 0;
+        }
+    }
+}
+
+.c-site-navigation__link {
+    &.is-current {
+        border-bottom: 2px solid currentColor;
+        padding-bottom: 4px;
+    }
+}

@@ -1,0 +1,34 @@
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+// Colours.
+
+$color-primary:       #5D20D4;
+
+$color-black:         #333030;
+$color-white:         #ffffff;
+
+$color-grey:          #666464;
+$color-grey-light:    #999797;
+
+
+// Typography.
+
+$base-font-family: futura-pt, sans-serif;
+$base-font-weight: 300;
+
+$heading-font-family: brandon-grotesque, sans-serif;
+$heading-font-weight: 900;
+
+
+// Opacity.
+
+$global-opacity: .7;
+
+
+// Transition.
+
+$global-transition: .25s all ease-in-out;

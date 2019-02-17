@@ -1,0 +1,11 @@
+<ul class="c-social o-list-inline">
+    {% for item in site.data.social %}
+    <li class="o-list-inline__item">
+        <a href="{{ item.link }}">
+            <svg class="c-icon c-icon--social c-icon--primary">
+                <use xlink:href="#icon-{{ item.name | downcase }}" />
+            </svg><!-- /c-icon -->
+        </a>
+    </li>
+    {% endfor %}
+</ul><!-- /c-social -->

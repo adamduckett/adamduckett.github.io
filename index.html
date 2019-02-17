@@ -1,1 +1,38 @@
-Hello World
+---
+layout: default
+title: Home
+---
+
+<div class="o-wrapper">
+
+    <h1 class="c-heading-strapline">Web Designer, Illustrator,<br />
+Shorts wearer</h1>
+
+</div><!-- /o-wrapper -->
+
+
+<section class="c-gallery">
+
+    <div class="_c-gallery__inner o-wrapper o-wrapper--flush@mobile o-wrapper--wide">
+
+        <ul class="o-grid">
+
+            {% for post in site.posts %}
+            <li class="c-gallery__project o-grid__item">
+
+                <a class="c-gallery__link" href="{{ post.url }}">
+                    <div class="c-gallery__details">
+                        <h2 class="c-gallery__title">{{ post.title }}</h2>
+                    </div>
+
+                    <img src="{{ site.url }}/assets/images/covers/{{ post.cover_image }}" />
+                </a><!-- /c-gallery__link -->
+
+            </li><!-- /c-gallery__project -->
+            {% endfor %}
+
+        </ul><!-- /o-grid -->
+
+    </div><!-- /c-gallery__inner -->
+
+</section><!-- /c-gallery -->

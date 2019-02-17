@@ -1,0 +1,43 @@
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+
+.c-page {
+
+    .o-grid {
+        @include respond-to(tablet) {
+            align-items: center;
+        }
+    }
+
+    .o-grid__item {
+        @include respond-to(tablet) {
+            width: 50%;
+        }
+    }
+}
+
+.c-page__wrapper {
+    @include respond-to(tablet) {
+        padding-right: $global-spacing-unit-small;
+        padding-left:  $global-spacing-unit-small;
+        margin-right: auto;
+        margin-left:  auto;
+        max-width: $wrapper-width;
+    }
+}
+
+.c-page__image {
+    margin-bottom: 48px;
+
+    @include respond-to(tablet) {
+        margin-bottom: 0;
+    }
+}
+
+.c-page__text-wrapper {
+    @include respond-to(tablet) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,18 @@
+# Site settings
+title: adamduckett.me
+author: Adam Duckett
+email: adammichaelduckett@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is a description of me.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://adamduckett.me" # the base hostname & protocol for your site
+instagram_username: "@adam.duckett"
+instagram_url: https://www.instagram.com/adam.duckett/
+project_assets: "/assets/images/projects/"
+
+# Build settings
+highlighter: rouge
+markdown: kramdown
+permalink: /:title/
+sass:
+  style: :compressed

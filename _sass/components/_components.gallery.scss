@@ -1,0 +1,68 @@
+/* ==========================================================================
+   #GALLERY
+   ========================================================================== */
+
+.c-gallery__inner {
+    @include respond-to(tablet) {
+        padding-left: $global-spacing-unit-small;;
+        padding-right: $global-spacing-unit-small;;
+    }
+}
+
+.c-gallery__project {
+    margin-bottom: $global-spacing-unit;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include respond-to(tablet) {
+        width: 50%;
+    }
+
+    @include respond-to(desktop) {
+        width: 33.3333333%;
+    }
+
+}
+
+.c-gallery__link {
+    display: block;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.c-gallery__details {
+    align-items: center;
+    background-color: $color-primary;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    opacity: 0;
+    padding: $global-spacing-unit-small;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+
+    .c-gallery__link:hover & {
+        opacity: 1;
+    }
+}
+
+.c-gallery__title {
+    font-size: 32px;
+    line-height: 1.125;
+    margin-bottom: 0;
+
+    @include respond-to(wide) {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+}

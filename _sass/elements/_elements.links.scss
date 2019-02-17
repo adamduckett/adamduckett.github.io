@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
+
+a {
+    color: $color-primary;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+        opacity: $global-opacity;
+        transition: $global-transition;
+    }
+}

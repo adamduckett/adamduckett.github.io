@@ -1,0 +1,29 @@
+/* ==========================================================================
+   #SITE-HEADER
+   ========================================================================== */
+
+.c-site-header {
+    padding-top: $global-spacing-unit-large;
+    padding-bottom: $global-spacing-unit-large;
+    text-align: center;
+
+    @include respond-to(desktop) {
+        margin-bottom: $global-spacing-unit;
+    }
+}
+
+.c-site-header__inner {
+    @include respond-to(tablet) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.c-site-header__block:first-child {
+    margin-bottom: $global-spacing-unit;
+
+    @include respond-to(tablet) {
+        margin-bottom: 0;
+    }
+}

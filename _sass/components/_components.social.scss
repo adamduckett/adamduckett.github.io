@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #SOCIAL
+   ========================================================================== */
+
+.c-social {
+    margin-bottom: $global-spacing-unit-small;
+
+    .o-list-inline__item {
+        margin-left: $global-spacing-unit-small;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}

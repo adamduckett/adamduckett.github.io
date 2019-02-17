@@ -1,0 +1,41 @@
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+
+/**
+ * Page-level constraining and wrapping elements.
+ */
+
+.o-wrapper {
+    margin-right: auto;
+    margin-left:  auto;
+    max-width: $wrapper-width;
+    padding-left:  $global-spacing-unit-small;
+    padding-right: $global-spacing-unit-small;
+}
+
+
+
+
+
+/* Size modifiers.
+   ========================================================================== */
+
+.o-wrapper--flush\@mobile {
+    padding-left: 0;
+    padding-right: 0;
+
+    @include respond-to(tablet) {
+        padding-left:  $global-spacing-unit-small;
+        padding-right: $global-spacing-unit-small;
+    }
+}
+
+
+.o-wrapper--wide {
+    @include respond-to(wide) {
+        max-width: none;
+        padding-left: $global-spacing-unit-large;
+        padding-right: $global-spacing-unit-large;
+    }
+}

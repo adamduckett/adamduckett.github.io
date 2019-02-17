@@ -1,0 +1,38 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+.c-heading-strapline {
+    font-size: 28px;
+    line-height: 1.28571428571;
+    text-align: center;
+
+    @include respond-to(tablet) {
+        font-size: 60px;
+        line-height: 1.06666666667;
+        margin-bottom: $global-spacing-unit-huge;
+    }
+}
+
+.c-heading-page {
+    font-size: 32px;
+    line-height: 1.125;
+    margin-bottom: 48px;
+    text-align: center;
+
+    @include respond-to(desktop) {
+        font-size: 48px;
+        line-height: 1.33333333333;
+        margin-bottom: $global-spacing-unit-large;
+    }
+}
+
+.c-heading-page--contact {
+    margin-bottom: 36px;
+
+    @include respond-to(tablet) {
+        font-size: 40px;
+        line-height: 1.2;
+        text-align: left;
+    }
+}

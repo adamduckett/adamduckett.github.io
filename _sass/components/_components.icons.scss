@@ -1,0 +1,34 @@
+/* ==========================================================================
+   #ICONS
+   ========================================================================== */
+
+/* Default/mandatory classes.
+   ========================================================================== */
+
+.c-icon {
+    display: inline-block;
+    height: $global-spacing-unit;
+    vertical-align: middle;
+    width: $global-spacing-unit;
+}
+
+
+
+
+
+/* Icon modifiers.
+   ========================================================================== */
+
+.c-icon--logo {
+    height: 64px;
+    width: 96px;
+}
+
+.c-icon--social {
+    height: 24px;
+    width: 24px;
+}
+
+.c-icon--primary {
+    fill: $color-primary;
+}

@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<article class="c-project">
+
+    <header class="c-project__header">
+
+        <div class="o-wrapper">
+
+            <h1 class="c-heading-page">{{ page.title }}</h1>
+
+            <div class="c-project__header-grid o-grid">
+
+                <div class="c-project__meta-wrapper o-grid__item">
+
+                    <ul class="c-project__meta o-list-bare">
+
+                        <li class="c-project__meta-item o-grid o-grid--between">
+                            <h3 class="c-project__meta-key o-grid__item">Client</h3>
+                            <span class="c-project__meta-value o-grid__item">{{ page.client }}</span>
+                        </li><!-- /o-grid -->
+
+                        <li class="c-project__meta-item o-grid o-grid--between">
+                            <h3 class="c-project__meta-key o-grid__item">Year</h3>
+                            <span class="c-project__meta-value o-grid__item">{{ page.year }}</span>
+                        </li><!-- /o-grid -->
+
+                        <li class="c-project__meta-item o-grid o-grid--between">
+                            <h3 class="c-project__meta-key o-grid__item">Type</h3>
+                            <span class="c-project__meta-value o-grid__item">{{ page.type }}</span>
+                        </li><!-- /o-grid -->
+
+                    </ul><!-- /c-project__meta -->
+
+                </div><!-- /o-grid__item -->
+
+                <div class="c-project__intro-wrapper o-grid__item">
+
+                    <p>{{ page.intro }}</p>
+
+                </div><!-- /o-grid__item -->
+
+            </div><!-- /c-project__header-grid -->
+
+        </div><!-- /o-wrapper -->
+
+    </header><!-- /c-project__header -->
+
+    <section class="c-project__content">
+
+        <div class="o-wrapper o-wrapper--flush@mobile">
+            {{ content }}
+        </div>
+
+    </section><!-- /c-project__content -->
+
+</article><!-- /c-project -->

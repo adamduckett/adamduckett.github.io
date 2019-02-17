@@ -1,0 +1,23 @@
+/* ==========================================================================
+    #CONTACT-GRID
+   ========================================================================== */
+
+.c-contact-grid {
+    @include respond-to(desktop) {
+        padding-top: 48px;
+    }
+
+    .o-grid__item {
+        @include respond-to(tablet) {
+            width: 50%;
+        }
+    }
+}
+
+.c-contact-grid__text {
+    margin-bottom: 48px;
+
+    @include respond-to(tablet) {
+        margin-bottom: $global-spacing-unit-large;
+    }
+}

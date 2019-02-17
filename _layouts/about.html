@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<section class="c-page">
+
+    <header class="o-wrapper">
+
+        <h1 class="c-heading-page">{{ page.title }}</h1>
+
+    </header><!-- /o-wrapper -->
+
+    <div class="c-page__wrapper">
+
+        <div class="o-grid">
+
+            <div class="o-grid__item">
+
+                <img class="c-page__image" src="{{ site.url }}/assets/images/{{ page.image }}" />
+
+            </div><!-- /o-grid__item -->
+
+            <div class="o-grid__item">
+
+                <div class="c-page__text-wrapper o-wrapper">
+
+                    {{ content }}
+
+                </div><!-- /o-wrapper -->
+
+            </div><!-- /o-grid__item -->
+
+        </div><!-- /o-grid -->
+
+    </div><!-- /c-page__wrapper -->
+
+</section><!-- /c-page -->

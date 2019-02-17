@@ -1,0 +1,17 @@
+<nav class="c-site-navigation">
+
+    <ul class="c-site-navigation__list o-list-inline">
+
+        {% for item in site.data.navigation %}
+        <li class="c-site-navigation__item o-list-inline__item">
+
+            <a class="c-site-navigation__link{% if page.url == item.link %} is-current{% endif %}" href="{{ item.link }}">
+                {{ item.name }}
+            </a>
+
+        </li>
+        {% endfor %}
+
+    </ul>
+
+</nav><!-- /c-site-navigation -->

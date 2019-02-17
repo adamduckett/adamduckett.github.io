@@ -1,0 +1,76 @@
+/* ==========================================================================
+    #PROJECT
+   ========================================================================== */
+
+.c-project__header {
+    > .o-wrapper {
+        max-width: 868px;
+    }
+}
+
+.c-project__header-grid {
+    @include respond-to(tablet) {
+        margin-bottom: $global-spacing-unit-huge;
+    }
+}
+
+.c-project__meta-wrapper {
+    @include respond-to(tablet) {
+        width: 33.3333333%;
+    }
+}
+
+.c-project__intro-wrapper {
+    @include respond-to(tablet) {
+        width: 66.6666667%;
+    }
+}
+
+.c-project__meta {
+    margin-bottom: 64px;
+
+    @include respond-to(tablet) {
+        margin-bottom: 0;
+    }
+}
+
+.c-project__meta-item {
+    margin-bottom: 12px;
+
+    @include respond-to(tablet) {
+        justify-content: normal;
+        margin-bottom: $global-spacing-unit;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        > .o-grid__item {
+            width: 100%;
+        }
+    }
+}
+
+.c-project__meta-key {
+    font-size: 18px;
+    line-height: 1.333333;
+    margin-bottom: 0;
+
+    @include respond-to(tablet) {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+.c-project__meta-value {
+    color: $color-grey;
+
+    @include respond-to(tablet) {
+        font-size: 18px;
+        line-height: 1.333333;
+    }
+}
+
+.c-project__content > .o-wrapper {
+    max-width: $wrapper-width;
+}
